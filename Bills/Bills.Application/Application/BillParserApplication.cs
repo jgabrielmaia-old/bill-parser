@@ -5,13 +5,16 @@ using System.Threading.Tasks;
 
 namespace Bills.Application
 {
+    /// <summary>
+    /// Application for parsing files based on format and file extension into bills
+    /// </summary>
     public class BillParserApplication : IBillParserApplication
     {
-        private readonly IFileSyncService _fileSyncService;
+        private readonly IFileService _fileSyncService;
         private readonly IBillFormatService _billFormatService;
         private readonly IBillParserService _billParserService;
 
-        public BillParserApplication(IFileSyncService fileSyncService,
+        public BillParserApplication(IFileService fileSyncService,
                                      IBillFormatService billFormatService,
                                      IBillParserService billParserService)
         {

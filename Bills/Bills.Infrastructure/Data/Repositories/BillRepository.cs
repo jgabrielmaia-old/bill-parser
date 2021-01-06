@@ -1,16 +1,16 @@
-﻿using Bills.Domain.Dtos;
-using Bills.Domain.Entities;
+﻿using Bills.Domain;
+using Bills.Domain.Dtos;
 using Bills.Domain.Interfaces.Data.Repository;
 using System.Threading.Tasks;
 
 namespace Bills.Infrastructure.Data.Repositories
 {
     /// <summary>
-    /// Access files in the Blob Storage and retrieve them
+    /// Access the MongoDB bill database
     /// </summary>
-    public class FileRepository : IFileRepository
+    public class BillRepository : IBillRepository
     {
-        public Task<FileDto> GetFile(string address)
+        public Task<Bill> Save(BillDto billDto)
         {
             throw new System.NotImplementedException();
         }

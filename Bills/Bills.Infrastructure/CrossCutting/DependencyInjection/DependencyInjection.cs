@@ -19,6 +19,7 @@ namespace Bills.Infrastructure.CrossCutting.DependencyInjection
             services.AddSingleton(typeof(IBillParserFactory<>), typeof(BillParserFactory<>));
             services.AddScoped<IFileRepository, FileRepository>();
             services.AddScoped<ISupplyFormatRepository, SupplyFormatRepository>();
+            services.AddScoped<IBillRepository, BillRepository>();
             services.AddScoped<IBillFormatService, BillFormatService>();
             services.AddScoped<IBillParserService, BillParserService>();
         }

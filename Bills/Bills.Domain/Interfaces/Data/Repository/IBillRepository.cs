@@ -4,10 +4,10 @@ using System.Threading.Tasks;
 namespace Bills.Domain.Interfaces.Data.Repository
 {
     /// <summary>
-    /// Access files in the Blob Storage and retrieve them
+    /// Access the MongoDB bill database
     /// </summary>
-    public interface IFileRepository
+    public interface IBillRepository
     {
-        Task<FileDto> GetFile(string address);
+        Task<Bill> Save(BillDto billDto);
     }
 }

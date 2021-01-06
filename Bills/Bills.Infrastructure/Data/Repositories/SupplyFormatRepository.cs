@@ -4,6 +4,9 @@ using System.Threading.Tasks;
 
 namespace Bills.Infrastructure.Data.Repositories
 {
+    /// <summary>
+    /// Retrieves sypply format as documents from MongoDB
+    /// </summary>
     public class SupplyFormatRepository : ISupplyFormatRepository
     {
         public Task<SupplyFormat> RetrieveSupplyFormat(int supplyFormatId)

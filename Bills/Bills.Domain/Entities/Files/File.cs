@@ -2,6 +2,10 @@
 
 namespace Bills.Domain.Entities
 {
+    /// <summary>
+    /// Abstraction of physical representation of the bill
+    /// If it is part of a file collection, points to the next chunk to be rendered
+    /// </summary>
     public class File
     {
         public int BillId { get; set; }

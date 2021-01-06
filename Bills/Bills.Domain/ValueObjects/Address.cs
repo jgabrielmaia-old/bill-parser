@@ -2,6 +2,9 @@
 
 namespace Bills.Domain.ValueObjects
 {
+    /// <summary>
+    /// Represents a physical address
+    /// </summary>
     public class Address
     {
         public Address(string street, 

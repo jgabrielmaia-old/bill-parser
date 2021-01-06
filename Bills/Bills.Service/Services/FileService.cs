@@ -5,11 +5,15 @@ using System.Threading.Tasks;
 
 namespace Bills.Service.Services
 {
-    public class FileSyncService : IFileSyncService
+    /// <summary>
+    /// Summarizes all file related operations
+    /// Glue file pieces together and retrieves files
+    /// </summary>
+    public class FileService : IFileService
     {
         private readonly IFileRepository _fileChunkRepository;
 
-        public FileSyncService(IFileRepository fileChunkRepository)
+        public FileService(IFileRepository fileChunkRepository)
         {
             _fileChunkRepository = fileChunkRepository;
         }

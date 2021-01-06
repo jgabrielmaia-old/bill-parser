@@ -3,7 +3,11 @@ using System.Threading.Tasks;
 
 namespace Bills.Domain.Interfaces.Services
 {
-    public interface IFileSyncService
+    /// <summary>
+    /// Summarizes all file related operations
+    /// Glue file pieces together and retrieves files
+    /// </summary>
+    public interface IFileService
     {
         Task<FileDto> AggregateFileChunks(string billId);
 
