@@ -1,4 +1,4 @@
-﻿namespace Bills.Domain.Dto
+﻿namespace Bills.Domain.Dtos
 {
     public class FileDto
     {

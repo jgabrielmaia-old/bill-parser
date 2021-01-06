@@ -1,4 +1,4 @@
-﻿using Bills.Domain.Dto;
+﻿using Bills.Domain.Dtos;
 using Bills.Domain.Interfaces.Data.Repository;
 using Bills.Domain.Interfaces.Services;
 using System.Threading.Tasks;
