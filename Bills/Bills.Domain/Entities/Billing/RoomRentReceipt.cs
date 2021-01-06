@@ -2,7 +2,7 @@
 
 namespace Bills.Domain.Entities
 {
-    public class HotelReceipt : Bill
+    public class RoomRentReceipt : Bill
     {
         public decimal DailyFare { get; set; }
         public DateTime CheckInDate { get; set; }

@@ -5,9 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="CrossCutting\DependencyInjection\" />
-    <Folder Include="Data\Factories\" />
-    <Folder Include="Data\Repositories\" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Bills.Application\Bills.Application.csproj" />
+    <ProjectReference Include="..\Bills.Domain\Bills.Domain.csproj" />
   </ItemGroup>
 
 </Project>

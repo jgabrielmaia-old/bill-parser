@@ -11,7 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Application\" />
+    <ProjectReference Include="..\Bills.Domain\Bills.Domain.csproj" />
+    <ProjectReference Include="..\Bills.Infrastructure\Bills.Infrastructure.csproj" />
+    <ProjectReference Include="..\Bills.Service\Bills.Service.csproj" />
   </ItemGroup>
 
 </Project>
